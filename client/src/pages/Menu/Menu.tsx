@@ -1,6 +1,7 @@
 import { Central as Layout } from "@/layouts";
 import { CabinetSection } from "./CabinetSection";
 import "./Menu.style.scss";
+ 
 import { Link } from "react-router-dom";
 
 function Menu() {

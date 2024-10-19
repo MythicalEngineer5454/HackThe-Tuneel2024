@@ -1,7 +1,11 @@
 @import "../../../globals.scss";
 
+
+
+
 .CabinetSection {
   display: flex;
+  flex-direction:row;
   gap: 0.5rem;
   img {
     height: 3.2rem;
@@ -18,5 +22,27 @@
 
   a:hover {
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 500px) {
+  .CabinetSection {
+    display: flex;
+    flex-direction: row;
+    gap: 0.9rem;
+    
+    img {
+      height: 5rem;
+    }
+  
+    li {
+      font-size: 100%;
+    }
+  
+    a {
+      text-decoration: underline;
+      color: $theme--dark;
+    }
+  
   }
 }

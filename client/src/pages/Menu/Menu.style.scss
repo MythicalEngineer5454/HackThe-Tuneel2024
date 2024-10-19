@@ -1,0 +1,30 @@
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
+//Le text hehehehaw
+
+b {
+    color: rgb(33, 211, 98);
+    @include keyframes(fade){
+        0%{
+        color: rgb(33, 211, 98);
+        }
+       25%{
+        color: rgb(255, 255, 255);
+        }
+       100%{
+        color: rgb(33, 211, 98);
+       }
+      }
+    @include animate(fade, 1.5s, linear, infinite);
+}
+
+//le box flexing
+

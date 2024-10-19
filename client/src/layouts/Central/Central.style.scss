@@ -15,8 +15,12 @@
       margin-bottom: 1.5rem;
       font-weight: normal;
       font-size: 1.3em;
+      background-color: rgb(79, 196, 63);
     }
 
+    &__lineItems{
+      color: azure;
+    }
     &__footer {
       font-weight: bold;
       font-size: 80%;
